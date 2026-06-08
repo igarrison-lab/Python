@@ -7802,7 +7802,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Chapter-?-Coding-Set">Chapter <strong>?</strong> Coding Set<a class="anchor-link" href="#Chapter-?-Coding-Set">¶</a></h1><p><strong>Remember to save a copy of this template BEFORE YOU START WORKING :)</strong></p>
+<h1 id="Chapter-3-Coding-Set">Chapter 3 Coding Set<a class="anchor-link" href="#Chapter-3-Coding-Set">¶</a></h1><p><strong>Remember to save a copy of this template BEFORE YOU START WORKING :)</strong></p>
 <p>Work completed by Isaiah Garrison.</p>
 <p>If you start to struggle with a problem for an extended period of time, remember you can go comment on two other submissions now (seeing other student work helps), or you can post in our discussion forum for questions, which can also earn you extra credit.</p>
 </div>
@@ -7824,7 +7824,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># configure your environment</span>
@@ -7858,23 +7858,73 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Problem-?">Problem <strong>?</strong><a class="anchor-link" href="#Problem-?">¶</a></h3><h4 id="Question-Text">Question Text<a class="anchor-link" href="#Question-Text">¶</a></h4><p><em>Paste in the question text below.</em></p>
-<h4 id="High-Level-Overview">High-Level Overview<a class="anchor-link" href="#High-Level-Overview">¶</a></h4><p><em>In two to three sentences at minimum, walk through your general approach to the problem and identify any particular issues you had.</em></p>
+<h3 id="Problem-4">Problem 4<a class="anchor-link" href="#Problem-4">¶</a></h3><h4 id="Question-Text">Question Text<a class="anchor-link" href="#Question-Text">¶</a></h4><p>The following code contains several nested  statements. Unfortunately, it was written without proper alignment and indentation. Rewrite the code and use the proper conventions of alignment and indentation.</p>
+<p>if score &gt;= A_score:
+print('Your grade is A.')
+else:
+if score &gt;= B_score:
+print('Your grade is B.')
+else:
+if score &gt;= C_score:
+print('Your grade is C.')
+else:
+if score &gt;= D_score:
+print('Your grade is D.')
+else:
+print('Your grade is F.')</p>
+<h4 id="High-Level-Overview">High-Level Overview<a class="anchor-link" href="#High-Level-Overview">¶</a></h4><p>My general approach was fairly simple. I first copied and pasted the previous coding section because it was needed for the solution. I then seen I only had to fix the alignment; knowing this, I simply indented where you are supposed to. I wasn't sure if we needed to add the grading scale or score but I added it anyway just to be safe. Very fun and easy.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># add your code to this cell</span>
 <span class="c1"># remember to include comments like this one for most of your code</span>
 <span class="c1"># remember to "Run cell" once you're done, excecuting your code so the output is displayed below</span>
+
+<span class="c1"># What your score is</span>
+<span class="n">score</span> <span class="o">=</span> <span class="mi">96</span>
+
+<span class="c1"># Grading scale</span>
+<span class="n">A_score</span> <span class="o">=</span> <span class="mi">91</span>
+<span class="n">B_score</span> <span class="o">=</span> <span class="mi">81</span>
+<span class="n">C_score</span> <span class="o">=</span> <span class="mi">71</span>
+<span class="n">D_score</span> <span class="o">=</span> <span class="mi">61</span>
+
+<span class="c1"># Showing students what grade they got</span>
+<span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="n">A_score</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Your grade is A.'</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="n">B_score</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Your grade is B.'</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="n">C_score</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">'Your grade is C.'</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="n">D_score</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">'Your grade is D.'</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">'Your grade is F.'</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Your grade is A.
+</pre>
 </div>
 </div>
 </div>
@@ -7886,23 +7936,50 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Problem-?">Problem <strong>?</strong><a class="anchor-link" href="#Problem-?">¶</a></h3><h4 id="Question-Text">Question Text<a class="anchor-link" href="#Question-Text">¶</a></h4><p><em>Paste in the question text below.</em></p>
-<h4 id="High-Level-Overview">High-Level Overview<a class="anchor-link" href="#High-Level-Overview">¶</a></h4><p><em>In two to three sentences at minimum, walk through your general approach to the problem and identify any particular issues you had.</em></p>
+<h3 id="Problem-5">Problem 5<a class="anchor-link" href="#Problem-5">¶</a></h3><h4 id="Question-Text">Question Text<a class="anchor-link" href="#Question-Text">¶</a></h4><p>Write nested decision structures that perform the following: If amount1 is greater than 10 and amount2 is less than 100, display the greater of amount1 and amount 2.</p>
+<h4 id="High-Level-Overview">High-Level Overview<a class="anchor-link" href="#High-Level-Overview">¶</a></h4><p>I didn't have any problems with this one. I had an example from the walkthrough video to go off of. I first filled in the amounts since that's what we would be going off of. I then made the alorithim to check if it was greater than or less than those amounts. After that, I displayed the greater amount in all and did what the problem asked. Overall, pretty easy.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># add your code to this cell</span>
 <span class="c1"># remember to include comments like this one for most of your code</span>
 <span class="c1"># remember to "Run cell" once you're done, excecuting your code so the output is displayed below</span>
+
+<span class="c1"># Fill in amount 1</span>
+<span class="n">amount1</span> <span class="o">=</span> <span class="mi">11</span>
+
+<span class="c1"># Fill in amount 2</span>
+<span class="n">amount2</span> <span class="o">=</span> <span class="mi">99</span>
+
+<span class="c1"># Display the greater amount</span>
+<span class="k">if</span> <span class="n">amount1</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">amount2</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">amount1</span> <span class="o">&gt;</span> <span class="n">amount2</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"amount1"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"amount2"</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>amount2
+</pre>
 </div>
 </div>
 </div>
@@ -7925,23 +8002,61 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Problem-?">Problem <strong>?</strong><a class="anchor-link" href="#Problem-?">¶</a></h3><h4 id="Question-Text">Question Text<a class="anchor-link" href="#Question-Text">¶</a></h4><p><em>Paste in the question text below.</em></p>
-<h4 id="High-Level-Overview">High-Level Overview<a class="anchor-link" href="#High-Level-Overview">¶</a></h4><p><em>In two to three sentences at minimum, walk through your general approach to the problem and identify any particular issues you had.</em></p>
+<h3 id="Problem-1">Problem 1<a class="anchor-link" href="#Problem-1">¶</a></h3><h4 id="Question-Text">Question Text<a class="anchor-link" href="#Question-Text">¶</a></h4><p>Write a program that asks the user for a number in the range of 1 through 7. The program should display the corresponding day of the week, where 1 = Monday, 2 = Tuesday, 3 = Wednesday, 4 = Thursday, 5 = Friday, 6 = Saturday, and 7 = Sunday. The program should display an error message if the user enters a number that is outside the range of 1 through 7.</p>
+<h4 id="High-Level-Overview">High-Level Overview<a class="anchor-link" href="#High-Level-Overview">¶</a></h4><p>I first tried to figure out what I had to do and how to do it. I first thought to ask the user for a number so I made the input. I then had to make it so it prints the day based off a number so I used the if statements. It was an overall pretty simple concept. I added the error at the end so it lets them know there was an error.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># add your code to this cell</span>
 <span class="c1"># remember to include comments like this one for most of your code</span>
 <span class="c1"># remember to "Run cell" once you're done, excecuting your code so the output is displayed below</span>
+
+<span class="c1"># Ask user to pick a number</span>
+<span class="n">number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Please pick a number 1 through 7:   "</span><span class="p">))</span>
+
+<span class="c1"># Find and print the weekday based off number</span>
+<span class="k">if</span> <span class="n">number</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Monday"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">number</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Tuesday"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">number</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Wednesday"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">number</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Thursday"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">number</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Friday"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">number</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Saturday"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">number</span> <span class="o">==</span> <span class="mi">7</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Sunday"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"error: you have picked a number outside the range"</span><span class="p">)</span>
+    
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Wednesday
+</pre>
 </div>
 </div>
 </div>
@@ -7953,23 +8068,55 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Problem-?">Problem <strong>?</strong><a class="anchor-link" href="#Problem-?">¶</a></h3><h4 id="Question-Text">Question Text<a class="anchor-link" href="#Question-Text">¶</a></h4><p><em>Paste in the question text below.</em></p>
-<h4 id="High-Level-Overview">High-Level Overview<a class="anchor-link" href="#High-Level-Overview">¶</a></h4><p><em>In two to three sentences at minimum, walk through your general approach to the problem and identify any particular issues you had.</em></p>
+<h3 id="Problem-5">Problem 5<a class="anchor-link" href="#Problem-5">¶</a></h3><h4 id="Question-Text">Question Text<a class="anchor-link" href="#Question-Text">¶</a></h4><p>Scientists measure an object’s mass in kilograms and its weight in newtons. If you know the amount of mass of an object in kilograms, you can calculate its weight in newtons with the following formula:
+weight = mass x 9.8
+Write a program that asks the user to enter an object’s mass, then calculates its weight. If the object weighs more than 500 newtons, display a message indicating that it is too heavy. If the object weighs less than 100 newtons, display a message indicating that it is too light.</p>
+<h4 id="High-Level-Overview">High-Level Overview<a class="anchor-link" href="#High-Level-Overview">¶</a></h4><p>First, I of course had to get the user's input for the mass for the rest of the problem. After that, I calculated the equation based off the operator formula from last chapter. I then followed the rest of the problem and displayed the message if it was too light or if it was too heavy as asked. Overall, very straightforwar.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># add your code to this cell</span>
 <span class="c1"># remember to include comments like this one for most of your code</span>
 <span class="c1"># remember to "Run cell" once you're done, excecuting your code so the output is displayed below</span>
+
+<span class="c1"># Get mass from user</span>
+<span class="n">mass</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Please enter an object's mass in kilograms"</span><span class="p">))</span>
+
+<span class="c1"># Calculate the weight</span>
+<span class="n">weight</span> <span class="o">=</span> <span class="n">mass</span> <span class="o">*</span> <span class="mf">9.8</span>
+
+<span class="c1"># Display message if too heavy</span>
+<span class="k">if</span> <span class="n">weight</span> <span class="o">&gt;</span> <span class="mi">500</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"That weight is too heavy"</span><span class="p">)</span>
+
+<span class="c1"># Display message if too light</span>
+<span class="k">if</span> <span class="n">weight</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"That weight is too light"</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>That weight is too heavy
+</pre>
 </div>
 </div>
 </div>
@@ -7981,23 +8128,60 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Problem-?">Problem <strong>?</strong><a class="anchor-link" href="#Problem-?">¶</a></h3><h4 id="Question-Text">Question Text<a class="anchor-link" href="#Question-Text">¶</a></h4><p><em>Paste in the question text below.</em></p>
-<h4 id="High-Level-Overview">High-Level Overview<a class="anchor-link" href="#High-Level-Overview">¶</a></h4><p><em>In two to three sentences at minimum, walk through your general approach to the problem and identify any particular issues you had.</em></p>
+<h3 id="Problem-15">Problem 15<a class="anchor-link" href="#Problem-15">¶</a></h3><h4 id="Question-Text">Question Text<a class="anchor-link" href="#Question-Text">¶</a></h4><p>The month of February normally has 28 days. But if it is a leap year, February has 29 days. Write a program that asks the user to enter a year. The program should then display the number of days in February that year. Use the following criteria to identify leap years:</p>
+<p>Determine whether the year is divisible by 100. If it is, then it is a leap year if and only if it is also divisible by 400. For example, 2000 is a leap year, but 2100 is not.</p>
+<p>If the year is not divisible by 100, then it is a leap year if and only if it is divisible by 4. For example, 2008 is a leap year, but 2009 is not. Here is a sample run of the program:</p>
+<p>Enter a year: 2008 [Enter}
+In 2008 February has 29 days.</p>
+<h4 id="High-Level-Overview">High-Level Overview<a class="anchor-link" href="#High-Level-Overview">¶</a></h4><p>This one was a bit more difficult. the first part is easy, I just had to ask for the year. But then, I had to go back and actually find from the textbook which operator could do this because I forgot. Other than that, I also had to figure out what this problem was trying to get me to do which was not very clear to me. I figured it out in the end but eh.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># add your code to this cell</span>
 <span class="c1"># remember to include comments like this one for most of your code</span>
 <span class="c1"># remember to "Run cell" once you're done, excecuting your code so the output is displayed below</span>
+
+<span class="c1"># Ask user for a year</span>
+<span class="n">year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Please enter a year:  "</span><span class="p">))</span>
+
+<span class="c1"># See if its a leap year</span>
+<span class="k">if</span> <span class="n">year</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">year</span> <span class="o">%</span> <span class="mi">400</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">days</span> <span class="o">=</span> <span class="mi">29</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">days</span> <span class="o">=</span> <span class="mi">28</span>
+<span class="k">elif</span> <span class="n">year</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">days</span> <span class="o">=</span> <span class="mi">29</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">days</span> <span class="o">=</span> <span class="mi">28</span>
+
+<span class="c1"># Display to user number of days in February</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"In year </span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2">, February has </span><span class="si">{</span><span class="n">days</span><span class="si">}</span><span class="s2"> days"</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>In year 2345, February has 28 days
+</pre>
 </div>
 </div>
 </div>
@@ -8009,23 +8193,92 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Problem-?">Problem <strong>?</strong><a class="anchor-link" href="#Problem-?">¶</a></h3><h4 id="Question-Text">Question Text<a class="anchor-link" href="#Question-Text">¶</a></h4><p><em>Paste in the question text below.</em></p>
-<h4 id="High-Level-Overview">High-Level Overview<a class="anchor-link" href="#High-Level-Overview">¶</a></h4><p><em>In two to three sentences at minimum, walk through your general approach to the problem and identify any particular issues you had.</em></p>
+<h3 id="Problem-17">Problem 17<a class="anchor-link" href="#Problem-17">¶</a></h3><h4 id="Question-Text">Question Text<a class="anchor-link" href="#Question-Text">¶</a></h4><p>You have a group of friends coming to visit for your high school reunion, and you want to take them out to eat at a local restaurant. You aren’t sure if any of them have dietary restrictions, but your restaurant choices are as follows:</p>
+<p>Joe's Gourmet Burgers-Vegetarian: No, Vegan: No, Gluten-Free: No
+Main street Pizza Company-Vegetarian: Yes, Vegan: No, Gluten-Free: Yes
+Corner Cafe-Vegetarian: Yes, Vegan: Yes, Gluten-Free: Yes
+Mama's Fine Italian-Vegetarian: Yes, Vegan: No, Gluten-Free: No
+The Chef's Kitchen-Vegetarian: Yes, Vegan: Yes, Gluten-Free: Yes</p>
+<p>Write a program that asks whether any members of your party are vegetarian, vegan, or gluten-free, to which then displays only the restaurants to which you may take the group. Here is an example of the program’s output:</p>
+<p>Is anyone in your party a vegetarian? yes [Enter]
+Is anyone in your party a Vegan? no [Enter]
+Is anyone in your party gluten-free? yes [Enter]</p>
+<p>Here are your restaraunt choices:
+Main street Pizza Company
+Corner Cafe
+The Chef's Kitchen</p>
+<p>Here is another example of the program’s output:</p>
+<p>Is anyone in your party a vegetarian? yes [Enter]
+Is anyone in your party a Vegan? yes [Enter]
+Is anyone in your party gluten-free? yes [Enter]</p>
+<p>Here are your restaraunt choices:
+Corner Cafe
+The Chef's Kitchen</p>
+<h4 id="High-Level-Overview">High-Level Overview<a class="anchor-link" href="#High-Level-Overview">¶</a></h4><p>This is the one I spent most of my time on. The first part of asking for input is easy. The second part of solving and displaying was a bit hard to figure out. It took me some time to figure out how I should go about displaying the restaraunt choices but once I thought about it, it was really simple. I just remembered "and" was a thing. Overall though, I would say it was a medium difficulty question.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># add your code to this cell</span>
 <span class="c1"># remember to include comments like this one for most of your code</span>
 <span class="c1"># remember to "Run cell" once you're done, excecuting your code so the output is displayed below</span>
+
+<span class="c1"># Ask if anyone is a vegetarian</span>
+<span class="n">vegetarian</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Is anyone in your party a vegetarian?:  "</span><span class="p">)</span>
+
+<span class="c1"># Ask if anyone is a vegan</span>
+<span class="n">vegan</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Is anyone in your party a Vegan?:  "</span><span class="p">)</span>
+
+<span class="c1"># Ask if anyone is gluten free</span>
+<span class="n">gluten_free</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Is anyone in your party gluten-free?:  "</span><span class="p">)</span>
+
+<span class="c1"># Show restaraunt choices</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Here are your restaraunt choices:"</span><span class="p">)</span>
+
+<span class="c1"># Display Joe's Gourmet Burgers if it's a choice</span>
+<span class="k">if</span> <span class="n">vegetarian</span> <span class="o">==</span> <span class="s2">"no"</span> <span class="ow">and</span> <span class="n">vegan</span> <span class="o">==</span> <span class="s2">"no"</span> <span class="ow">and</span> <span class="n">gluten_free</span> <span class="o">==</span> <span class="s2">"no"</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Joe's Gourmet Burgers"</span><span class="p">)</span>
+
+<span class="c1"># Display Main street Pizza Company if it's a choice</span>
+<span class="k">if</span> <span class="n">vegetarian</span> <span class="o">==</span> <span class="s2">"yes"</span> <span class="ow">and</span> <span class="n">vegan</span> <span class="o">==</span> <span class="s2">"no"</span> <span class="ow">and</span> <span class="n">gluten_free</span> <span class="o">==</span> <span class="s2">"yes"</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Main street Pizza Company"</span><span class="p">)</span>
+
+<span class="c1"># Display Corner Cafe if it's a choice</span>
+<span class="k">if</span> <span class="n">vegetarian</span> <span class="o">==</span> <span class="s2">"yes"</span> <span class="ow">and</span> <span class="n">vegan</span> <span class="o">==</span> <span class="s2">"yes"</span> <span class="ow">and</span> <span class="n">gluten_free</span> <span class="o">==</span> <span class="s2">"yes"</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Corner Cafe"</span><span class="p">)</span>
+
+<span class="c1"># Display Mama's Fine Italian if it's a choice</span>
+<span class="k">if</span> <span class="n">vegetarian</span> <span class="o">==</span> <span class="s2">"yes"</span> <span class="ow">and</span> <span class="n">vegan</span> <span class="o">==</span> <span class="s2">"no"</span> <span class="ow">and</span> <span class="n">gluten_free</span> <span class="o">==</span> <span class="s2">"no"</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Mama's Fine Italian"</span><span class="p">)</span>
+
+<span class="c1"># Display The Chef's Kitchen if it's a choice</span>
+<span class="k">if</span> <span class="n">vegetarian</span> <span class="o">==</span> <span class="s2">"yes"</span> <span class="ow">and</span> <span class="n">vegan</span> <span class="o">==</span> <span class="s2">"yes"</span> <span class="ow">and</span> <span class="n">gluten_free</span> <span class="o">==</span> <span class="s2">"yes"</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"The Chef's Kitchen"</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Here are your restaraunt choices:
+Mama's Fine Italian
+</pre>
 </div>
 </div>
 </div>
@@ -8045,20 +8298,6 @@ a.anchor-link {
 <li>Are you sharing an editable link (i.e., Share &gt; Anyone with the link &gt; Editor) if using Colaboratory, or did you make more than ten commits if using GitHub?</li>
 <li>Did you remember to comment on the submissions of two other students?</li>
 </ol>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-</div>
 </div>
 </div>
 </div>
